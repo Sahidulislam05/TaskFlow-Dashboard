@@ -8,12 +8,12 @@ const DashboardLayout = ({ children }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const location = useLocation();
 
-  // Route change হলে mobile sidebar বন্ধ করো
+  
   useEffect(() => {
     setSidebarOpen(false);
   }, [location.pathname]);
 
-  // ESC key দিয়ে sidebar বন্ধ
+  
   useEffect(() => {
     const handleKey = (e) => {
       if (e.key === "Escape") setSidebarOpen(false);
@@ -55,7 +55,7 @@ const DashboardLayout = ({ children }) => {
           {/* Footer */}
           <footer className="border-t border-base-200 px-6 lg:px-8 py-4">
             <p className="text-xs text-base-content/30 text-center">
-              © 2025 TaskFlow Management Suite. All rights reserved.
+              © 2026 TaskFlow Management Suite. All rights reserved.
             </p>
           </footer>
         </div>

@@ -34,7 +34,7 @@ const LoginPage = () => {
 
     // Basic validation
     if (!formData.email || !formData.password) {
-      setError("সব field পূরণ করুন।");
+      setError("All fields are required");
       return;
     }
 
@@ -235,7 +235,7 @@ const LoginPage = () => {
           {/* Header */}
           <motion.div variants={itemVariants} className="mb-8">
             <h2 className="text-3xl font-extrabold text-base-content mb-2">
-              Welcome back 👋
+              Welcome back
             </h2>
             <p className="text-base-content/50 text-sm">
               Sign in to your dashboard account
